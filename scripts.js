@@ -108,3 +108,30 @@ apiInteraction('DELETE','https://jsonplaceholder.typicode.com/users/6',null)
     console.log(Error(reason));
 })
 
+apiInteraction('GET','https://jsonplaceholder.typicode.com/users/1',null)
+.then((response)=>{
+  console.log('=========================\nUSER DATA');
+  console.log(response);
+})
+.catch((reason)=>{
+  console.log(Error(reason));
+})
+
+apiInteraction('GET','https://jsonplaceholder.typicode.com/users/1/albums',null)
+.then((response)=>{
+  console.log('=========================\nUSER ALBUMS');
+  console.log(response);
+})
+.catch((reason)=>{
+  console.log(Error(reason));
+})
+
+apiInteraction('GET','https://jsonplaceholder.typicode.com/users/1/posts',null)
+.then((response)=>{
+  console.log('=========================\nUSER POSTS');
+  console.log(response);
+})
+.catch((reason)=>{
+  console.log(Error(reason));
+})
+
